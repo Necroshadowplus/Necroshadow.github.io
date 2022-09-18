@@ -1,0 +1,196 @@
+.details_content{
+	width: 100%;
+	height: auto;
+	border: 1px solid #D4D4D5;
+	border-radius: 5px;
+	margin-bottom: 60px;
+	background-color: #fff;
+}
+.details_content_head{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #D4D4D5;
+	padding:15px 20px;
+}
+.details_content_head div{
+	float: left;
+}
+.details_item_img{
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.details_item_img>img{
+	width: 100%;
+	height: 100%;
+}
+.details_item_name{
+	margin: 0 10px;
+	line-height: 28px;
+	font-weight: bold;
+}
+.details_item_time,.details_item_num{
+	margin: 0 10px;
+	line-height: 28px;
+	color: #B5B5B5;
+}
+.details_content_head i{
+	margin-right: 5px;
+}
+.details_bigImg{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	border-bottom: 1px solid #D4D4D5;
+}
+.details_bigImg img{
+	width: 100%;
+	border-radius: 5px;
+}
+.details_item{
+	padding: 20px 60px;
+	margin-top: 30px;
+}
+.details_item h2{
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+}
+.details_sort{
+	padding: 30px 0;
+}
+.details_sort span{
+	border: 1px solid #00B5AD;
+	display: inline-block;
+	padding: 2px 14px;
+	/* float: right; */
+	font-weight: bold;
+	color: #00B5AD;
+	border-radius: 5px;
+	position: relative;
+	background-color: #fff;
+	margin-left: 20px;
+}
+.details_sort span i{
+	width: 10px;
+	height: 10px;
+	border-left: 1px solid #00B5AD;
+	border-bottom: 1px solid #00B5AD;
+	position: absolute;
+	top: 7px;
+	left: -6px;
+	transform: rotate(45deg);
+	background-color: #fff;
+}
+
+.details_btn{
+	text-align: center;
+}
+.details_btn>button{
+	padding: 10px 30px;
+	color: #F2711B;
+	background-color: #fff;
+	border: 1px solid #F2711B;
+	border-radius: 30px;
+}
+
+.msg{
+	width: 100%;
+	height: auto;
+	padding: 30px 40px;
+	border: 1px solid #A3C293;
+	background-color:#FCFFF5 ;
+	color: #4C7D4C ;
+	list-style: disc;
+	position: relative;
+}
+.msg a{
+	text-decoration: none;
+}
+.msg li{
+	margin: 6px auto;
+}
+.msg_img{
+	position: absolute;
+	right: 30px;
+	top: 0;
+	list-style: none;
+}
+.msg_img img{
+	width: 110px;
+	height: 110px;
+}
+
+.details_bottom{
+	width: 95%;
+	border: 1px solid #D4D4D5;
+	margin:20px auto;
+	border-radius: 5px;
+	border-top: 2px solid #08B6AF ;
+}
+.details_bottom h4{
+	padding: 5px 0;
+	width: 96%;
+	margin: 20px auto;
+	border-bottom: 1px solid #D4D4D5;
+	font-weight: bold;
+}
+.text{
+	width: 96%;
+	height: 160px;
+	margin-left:2%;
+	padding: 12px 16px;
+	outline: none;
+	border: 1px solid #767676;
+	border-radius: 5px;
+	/* 设置拖动的方向 */
+	resize: vertical;
+	font-size: 16px;
+}
+
+.details_input{
+	width: 96%;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.details_input div{
+	float: left;
+	position: relative;
+	border: 1px solid #D4D4D5;
+	border-radius: 5px;
+	height: 38px;
+	width: 210px;
+	margin-right: 20px;
+	color: #D4D4D5;
+}
+.details_input div i{
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	line-height: 35px;
+	float: left;
+}
+.details_input div input{
+	border: none;
+	outline: none;
+	float: right;
+	width: 170px;
+	height: 36px;
+}
+/* 这是给input框里面的字设置颜色 */
+input::placeholder{
+	color: #D4D4D5;
+}
+
+.input_btn{
+	width: 100px !important;
+	background-color:#00B5AD ;
+	color: #fff !important;
+	height: 36px;
+	line-height: 36px;
+	cursor: pointer;
+}
+.input_btn>i{
+	margin-left: 9px;
+}
