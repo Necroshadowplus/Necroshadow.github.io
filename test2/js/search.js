@@ -1,6 +1,9 @@
 	function onSearch(){
 	$("#index").addClass('active');
 	$("#about").removeClass('active');
+	$("#archive").removeClass('active');
+	$("#classify").removeClass('active');
+	$("#lable").removeClass('active');
 	var $searchVal = $("#search").val();
 	if($searchVal){
 		$("#content").html('<div class="row">'+

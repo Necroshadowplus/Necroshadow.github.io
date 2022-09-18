@@ -1,0 +1,235 @@
+/* 博客标签 */
+.lable_before{	
+	position: relative;
+	width:100% ;
+	height: auto;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.lable_contre_head{
+	position: relative;
+	width:100% ;
+	height: auto;
+	border: 1px solid #D4D4D5;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: white;
+}
+.lable_contre{
+	position: relative;
+	width:100% ;
+	height: auto;
+	border: 1px solid #D4D4D5;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: white;
+}
+.label_content_lable{
+	width: 100%;
+	height: auto;
+}
+.label_content_lable>ul{
+	/* position: relative; */
+	width: 100%;
+	height: auto;
+	/* border-bottom: 1px solid #d5d5d6; */
+	padding: 0 10px;
+}
+.label_content_lable>ul>li{
+	
+}
+.label_content_lable>ul>li{
+	display:inline-block;
+	margin:5px 10px;
+	padding: 2px 15px;
+	font-weight: 600;
+	border: 1px solid #eaeaeb;
+	color:#333333;
+	border-radius: 5px;
+	position: relative;
+	float: left;
+}
+.label_content_lable>ul>li:hover {
+	color: #55aaff;
+	cursor: pointer;
+}
+.label_content_lable>ul>li>span:last-child{
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.label_content_lable>ul>li>span i{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 7px;
+	left: -6px;
+	border-left: 1px solid #eaeaeb;
+	border-bottom: 1px solid #eaeaeb;
+	transform: rotate(45deg);
+	background-color: #fff;
+}
+.lableactive{
+	
+	border-color: #33c4bd !important;
+	color: #008000 !important;
+	
+}
+/* 动画 */
+@keyframes transform1{
+	0%{transform: translateX(300px);opacity:0}
+	100%{transform: translateX(0px);opacity:1}
+}
+#label_content_lable li:nth-child(1){
+	animation: 1s linear transform1 forwards;
+	
+}
+#label_content_lable li:nth-child(2){
+	animation: 2s linear transform1 forwards;
+	
+}
+#label_content_lable li:nth-child(3){
+	animation: 3s linear transform1 forwards;
+	
+}
+#label_content_lable li:nth-child(4){
+	animation: 3s linear transform1 forwards;
+	
+}
+#label_content_lable li:nth-child(5){
+	animation: 3s linear transform1 forwards;
+	
+}
+/* 头部 */
+.contre_head{
+	width: 100%;
+	height: 55px;
+	border-bottom: 1px solid #D4D4D5;
+}
+.contre_head i{
+	margin-right: 10px;
+}
+.contre_head div{
+	width: 50%;
+	float: left;
+	line-height: 55px;
+	padding:0 20px;
+}
+.contre_head div:first-child{
+	font-size: 22px;
+	color: #00B4AD;
+	font-weight: bold;
+}
+.contre_head div:last-child{
+	width: 30%;
+	float: right;
+	text-align: right;
+}
+.contre_head div span{
+	color: #F37325;
+	font-size: 26px;
+}
+/* 中间内容 */
+.contre_content{
+	width: 100%;
+	height: auto;
+}
+.contre_content_left{
+	width: 68%;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.contre_content_left>h3{
+	display: block;
+	margin-top: 30px;
+	color: #000000;
+}
+.contre_content_left>h3>a{
+	text-decoration: none;
+	color: #000000;
+	font-weight: 600;
+	cursor: pointer;
+}
+.contre_content_left>p{
+	display: block;
+	margin-top: 15px;
+	color: #000000;
+	font-size: 16px;
+}
+.contre_content_img{
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.contre_content_left>div{
+	width: 100%;
+	height: 30px;
+	position: relative;
+	margin-left: -15px;
+}
+.contre_content_left>div>div{
+	margin-left: 15px;
+	float: left;
+}
+.contre_content_line{
+	width: 96%;
+	height: 1.5px;
+	background-color: #D4D4D5;
+	margin: 40px 0 20px 2%;
+}
+.contre_content_img>img{
+	width: 100%;
+	height: 100%;
+}
+
+.contre_content_left>p>a{
+	text-decoration: none;
+	color: #000000;
+	font-weight: 500;
+}
+.contre_content_name{
+	margin: 0 10px;
+	color: #3F83C3;
+	font-weight: bold;
+	font-size: 14px;
+	height: 22px;
+	line-height: 22px;
+}
+.contre_content_time,.contre_content_num{
+	margin: 0 10px;
+	color: #B5B5B5;
+	font-size: 14px;
+}
+.contre_content_time i,.contre_content_num i{
+	margin-right: 3px;
+}
+.contre_content_sign{
+	border: 2px solid #00B4AD;
+	font-size: 14px;
+	padding: 2px 5px;
+	border-radius: 5px;
+	color:#00B4AD ;
+	position: absolute;
+	right: 0px;
+	top: -7px;
+}
+.contre_content_right{
+	width: 26%;
+	float: right;
+	margin-top: 20px;
+	height: 115px;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-top: -110px;
+	margin-right: 20px;
+}
+.contre_content_right>img{
+	width: 100%;
+}
+#content_box :last-child .contre_content_line{
+	color: #000000;
+	height: 0;
+}

@@ -79,7 +79,7 @@
 				float: right;
 			}
 			.search i:hover{
-				color: #fff;
+				color: #64d0cb;
 			}
 			.search input{
 				border: none;
@@ -92,15 +92,17 @@
 			}
 			.active{
 				background-color: rgba(255,255,255,.15);
-				color: #fff !important;
+				color: #64d0cb !important;
 			}
 			.nav_container>ul>li:hover a{
 				background-color: rgba(255,255,255,.15);
-				color: #fff !important;
+				color: #64d0cb !important;
 				text-decoration: none;
+				border: 1px solid #64d0cb;
 			}
 			.nav_container>ul>li:hover p{
 				background-color: rgba(255,255,255,.15);
-				color: #fff !important;
+				color: #64d0cb !important;
 				text-decoration: none;
+				border: 1px solid #64d0cb;
 			}	

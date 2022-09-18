@@ -9,15 +9,16 @@ input::placeholder{
 
 .about_left{
 	width: 850px;
-	height: 580px;
+	height: auto;
 	background-color: white;
 	text-align:center;
-	line-height: 580px;
 	border: 1px solid #D5D5D6;
 	box-shadow: 0 0 5px #ccc;
-	border-radius: :;
+	border-radius: 5px;
 }
-.about_img{
+.about_video{
+	margin-top: 50px;
+	margin-bottom: 50px;
 	width: 800px;
 	height: auto;
 	overflow: hidden;

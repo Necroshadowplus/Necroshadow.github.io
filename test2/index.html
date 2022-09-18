@@ -2,13 +2,18 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>博客</title>
 		<link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css" >
 		<link rel="stylesheet" type="text/css" href="css/header.css">	
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">	
 		<link rel="stylesheet" type="text/css" href="css/details.css">
-		<link rel="stylesheet" type="text/css" href="css/about.css">	
+		<link rel="stylesheet" type="text/css" href="css/archive.css">	
+		<link rel="stylesheet" type="text/css" href="css/classify.css">	
+		<link rel="stylesheet" type="text/css" href="css/about.css">
+		<link rel="stylesheet" type="text/css" href="css/lable.css">
 		<script src="js/jquery-1.11.1/jquery.js"></script>
 		<script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
 		<style>
@@ -42,9 +47,9 @@
 			</div>
 			<ul>
 				<li><a href="index.html" class="active" id="index"><i class="glyphicon glyphicon-home"></i>博客首页</a></li>
-				<li><p><i class="glyphicon glyphicon-th-list"></i>博客分类</p></li>
-				<li><p><i class="glyphicon glyphicon-tags"></i>博客标签</p></li>
-				<li><p><i class="glyphicon glyphicon-folder-open"></i>博客归档</p></li>
+				<li><p onclick="classify()" id="classify"><i class="glyphicon glyphicon-th-list"></i>博客分类</p></li>
+				<li><p onclick="lable()" id="lable"><i class="glyphicon glyphicon-tags"></i>博客标签</p></li>
+				<li><p onclick="archive()" id="archive"><i class="glyphicon glyphicon-folder-open"></i>博客归档</p></li>
 				<li><p onclick="about()" id="about"><i class="glyphicon glyphicon-user"></i>关于作者</p></li>
 			</ul>
 			<div class="search">
@@ -148,15 +153,45 @@
 			</div>
 		</div>
 	</div>
-	
 </div>
+<div id="page_end_html">
+		<!--看板娘 - 黑猫-->
+		    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+		    <script>
+		      L2Dwidget.init({
+		        "model": {
+		          jsonPath: "https://unpkg.com/live2d-widget-model-hijiki/assets/hijiki.model.json", <!--这里改模型，前面后面都要改-->
+		          "scale": 1
+		        },
+		        "display": {
+		          "position": "left", <!--设置看板娘的上下左右位置-->
+		          "width": 100,
+		          "height": 200,
+		          "hOffset": 0,
+		          "vOffset": 0
+		        },
+		        "mobile": {
+		          "show": true,
+		          "scale": 0.5
+		        },
+		        "react": {
+		          "opacityDefault": 0.7, <!--设置透明度-->
+		          "opacityOnHover": 0.2
+		        }
+		      });
+		      window.onload = function() {
+		        $("#live2dcanvas").attr("style", "position: fixed; opacity: 0.7; right: 20px; bottom: -100px; z-index: 1; pointer-events: none;")
+		      }
+		    </script>
+		  </div>
+
 		<script>	
 			var data=[
 				{id:1,title:"LeetCode-001 两数之和",content:"给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。",avatar:"./img/avatar.jpg",username:"小马",time:"2022-05-22",num:"59",sign:"学习笔记",img:"./img/about.jpeg"},
 				{id:2,title:"关于MySQL面试100个常见问题",content:"本文主要受众为开发人员,所以不涉及到MySQL的服务部署等操作",avatar:"./img/avatar.jpg",username:"小灰",time:"2021-02-22",num:"1550",sign:"面试整理",img:"./img/about.jpeg"},
 				{id:3,title:"Linux系统使用Yum命令安装Java环境",content:"Linux上安装软件，可以用yum非常方便，不需要下载解压，也不需要配置环境变量,一个指令就能完成",avatar:"./img/avatar.jpg",username:"小马",time:"2022-02-22",num:"163",sign:"教程",img:"./img/about.jpeg"},
-				{id:4,title:"SpringBoot项目部署云服务器详细步骤",content:"此篇文章将详细介绍如何将自己的SpringBoot项目部署到各大互联网公司提供的在线云解决方案,并且能从外网直接访问",avatar:"./img/avatar.jpg",username:"小马",time:"2022-05-22",num:"59",sign:"教程",img:"./img/about.jpeg"},
-				{id:5,title:"Git以及Github使用指南",content:"GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能",avatar:"./img/avatar.jpg",username:"小马",time:"2022-05-22",num:"59",sign:"教程",img:"./img/about.jpeg"}
+				{id:4,title:"SpringBoot项目部署云服务器详细步骤",content:"此篇文章将详细介绍如何将自己的SpringBoot项目部署到各大互联网公司提供的在线云解决方案,并且能从外网直接访问",avatar:"./img/avatar.jpg",username:"小马",time:"2022-03-22",num:"59",sign:"教程",img:"./img/about.jpeg"},
+				{id:5,title:"Git以及Github使用指南",content:"GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能",avatar:"./img/avatar.jpg",username:"小马",time:"2022-07-22",num:"59",sign:"教程",img:"./img/about.jpeg"}
 			]
 			
 			var str = "";
@@ -186,5 +221,8 @@
 		<script src="js/search.js"></script>
 		<script src="js/details.js"></script>
 		<script src="js/about.js"></script>
+		<script src="js/archive.js"></script>
+		<script src="js/classify.js"></script>
+		<script src="js/lable.js"></script>
 	</body>
 </html>

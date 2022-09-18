@@ -30,12 +30,12 @@
 			</style>
 			
 	<body>
-  <div  class="about_container">
+  <div  class="about_container" >
     <div class="container">
       <div class="row">
         <div class="col-md-9">
           <div class="about_left">
-            <img src="img/aboutMe.jpg" alt="" class="about_img">
+            <video muted autoplay loop class="about_video" id="video" ></video>
           </div>
         </div>
         <div class="col-md-3">
@@ -77,7 +77,51 @@
       </div>
 
     </div>
-  </div>		
+  </div>
+				<script>
+					function random(max) {
+					 
+					  return Math.floor(Math.random() *(max+1));
+					 
+					}
+						var videoOrder = random(11);
+						if(videoOrder == 0){
+							document.getElementById("video").innerHTML='<source src="img/Mi video.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 1){
+							document.getElementById("video").innerHTML='<source src="img/Pixel Cafee Rain.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 2){
+							document.getElementById("video").innerHTML='<source src="img/SurtrMP4.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 3){
+							document.getElementById("video").innerHTML='<source src="img/wallpaper.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 4){
+							document.getElementById("video").innerHTML='<source src="img/ezgif.com-video-to-gif.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 5){
+							document.getElementById("video").innerHTML='<source src="img/EJ-QHB7UwAAHc8C.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 6){
+							document.getElementById("video").innerHTML='<source src="img/untitled_waneella_upscaled.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 7){
+							document.getElementById("video").innerHTML='<source src="img/ezgif.com-gif-to-mp4 (4).mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 8){
+							document.getElementById("video").innerHTML='<source src="img/dz2ls-ovmaawxoh.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 9){
+							document.getElementById("video").innerHTML='<source src="img/4.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 10){
+							document.getElementById("video").innerHTML='<source src="img/8 Bit Smoking Chan ¦ Wallpaper Engine ¦ 90sFlav - Call me.mp4" type="video/mp4" />';
+						}
+						if(videoOrder == 11){
+							document.getElementById("video").innerHTML='<source src="img/TOKYO-RAIN.mp4" type="video/mp4" />';
+						}	
+				</script>
  </body>
 </html>
 

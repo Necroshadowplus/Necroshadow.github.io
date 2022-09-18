@@ -1,0 +1,145 @@
+.archive_content {
+	width: 80%;
+	height: auto;
+	margin: 0px auto;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+.archive_content_header {
+	width: 100%;
+	height: 60px;
+	border: 1px solid #D4D4D5;
+	border-radius: 5px 5px 0 0;
+	padding: 15px 20px;
+	background-color: #FFFFFF;
+}
+.archive_header_left {
+	float: left;
+	font-size: 20px;
+	color: #00B4AD;
+	font-weight: bold;
+}
+.archive_header_left>i {
+	margin-right: 10px;
+}
+.archive_header_right {
+	float: right;
+	margin-top: -3px;
+	font-size: 17px;
+}
+.archive_header_right>span {
+	font-size: 26px;
+	color: #F37325;
+}
+.archive_content_center {
+	width: 100%;
+	height: auto;
+	margin-top: 27px;
+}
+.archive_content_center>h2 {
+	text-align: center;
+}
+.archive_center_container {
+	width: 100%;
+	height: auto;
+	border: 1px solid #D4D4D5;
+	border-radius: 5px;
+}
+.archive_center_list{
+	width: 100%;
+	height: 55px;
+	border-bottom: 1px solid #D4D4D5;
+	padding: 10px 20px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.archive_center_container>.archive_center_list:nth-last-child(2){
+	border: none;
+}
+.archive_center_list:hover{
+	background-color: #F7F7F7;
+}
+.archive_center_list>li {
+	display: inline-block;
+	width: 90%;
+	position: relative;
+	margin-left: 10px;
+	color: aquamarine;
+	list-style: none;
+	overflow: hidden;
+}
+.archive_center_list>li:hover {
+	cursor: pointer;
+}
+.archive_center_list>li>a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333333;
+	width: 50%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.archive_center_list>li>i {
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin-top: 11px;
+	margin-right: 4px;
+	background-color: #00B4AD;
+	border-radius: 50%;
+}
+.archive_center_list span{
+	display: inline-block;
+	width: 55px;
+	height: 22px;
+	border: 1px solid #00B4AD;
+	border-radius: 5px;
+	position: relative;
+	margin-left: 10px;
+	margin-top: 6px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #00B4AD;
+}
+.archive_center_list span>i{
+	width: 9px;
+	height: 9px;
+	border-left: 1px solid #00B5AD;
+	border-bottom: 1px solid #00B5AD;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 6px;
+	left: -5px;
+	background-color: #FFFFFF;
+}
+.archive_type {
+	float: right;
+	margin-right: 30px;
+	margin-top: -40px;
+	position: relative;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #F2711C;
+}
+.archive_type>span {
+	width: 39px;
+	height: 22px;
+	float: right;
+	color: #F2711C;
+	border: 1px solid #F2711C;
+	border-radius: 5px;
+}
+.archive_type i {
+	width: 9px;
+	height: 9px;
+	border-left: 1px solid #F2711C;
+	border-bottom: 1px solid #F2711C;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 7px;
+	left: -4px;
+	background-color: #FFFFFF;
+}
